@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>658</width>
+    <height>507</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OpenTrafik</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="icons/icons.qrc">
+    <normaloff>:/images/icon.png</normaloff>:/images/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow {
+border: none;
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+stop: 0 #a6a6a6, stop: 0.08 #7f7f7f,
+stop: 0.39999 #717171, stop: 0.4 #626262,
+stop: 0.9 #4c4c4c, stop: 1 #333333);
+}
+
+#statusBar {
+background: rgb(220, 220, 220);
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">
+QPushButton {
+color: #333;
+border: 2px solid #555;
+border-radius: 11px;
+padding: 5px;
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #888);
+min-width: 80px;
+	font: 75 28pt &quot;Ubuntu&quot;;
+}
+
+QPushButton:hover {
+background: qradialgradient(cx: 0.3, cy: -0.4,
+fx: 0.3, fy: -0.4,
+radius: 1.35, stop: 0 #fff, stop: 1 #bbb);
+}
+
+QPushButton:pressed {
+background: qradialgradient(cx: 0.4, cy: -0.1,
+fx: 0.4, fy: -0.1,
+radius: 1.35, stop: 0 #fff, stop: 1 #ddd);
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pushButtonReports">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>94</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Reports</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButtonWarehouse">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>94</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Warehouse</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pushButtonInvoices">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>94</width>
+        <height>150</height>
+       </size>
+      </property>
+      <property name="baseSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Invoices</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pushButtonImports">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>Imports</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>658</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit_fullscreen"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionDatabase_settings"/>
+    <addaction name="actionGUI_settings"/>
+    <addaction name="actionUser_accounts"/>
+    <addaction name="actionECR_settings"/>
+    <addaction name="actionTaxes"/>
+    <addaction name="actionShop_settings"/>
+    <addaction name="actionBackup_settings"/>
+    <addaction name="actionSuppliers"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuOther">
+    <property name="title">
+     <string>Other</string>
+    </property>
+    <addaction name="actionAdd_brutto_buy_prices"/>
+    <addaction name="actionPrint_shelf_labels"/>
+   </widget>
+   <widget class="QMenu" name="menuStatistics">
+    <property name="title">
+     <string>Statistics</string>
+    </property>
+    <addaction name="actionMovers"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuOther"/>
+   <addaction name="menuStatistics"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionDatabase_settings">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/images/system-file-manager.svg</normaloff>:/images/system-file-manager.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Database settings</string>
+   </property>
+  </action>
+  <action name="actionGUI_settings">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/images/window-new.svg</normaloff>:/images/window-new.svg</iconset>
+   </property>
+   <property name="text">
+    <string>GUI settings</string>
+   </property>
+  </action>
+  <action name="actionExit_fullscreen">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/images/view-fullscreen.svg</normaloff>:/images/view-fullscreen.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Exit fullscreen</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/images/system-log-out.svg</normaloff>:/images/system-log-out.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Quit</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/images/system-users.svg</normaloff>:/images/system-users.svg</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionHelp">
+   <property name="icon">
+    <iconset resource="icons/icons.qrc">
+     <normaloff>:/images/help-browser.svg</normaloff>:/images/help-browser.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionUser_accounts">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>User accounts</string>
+   </property>
+   <property name="visible">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionECR_settings">
+   <property name="text">
+    <string>ECR settings</string>
+   </property>
+  </action>
+  <action name="actionTaxes">
+   <property name="text">
+    <string>Taxes</string>
+   </property>
+  </action>
+  <action name="actionCorrect_barcodes">
+   <property name="text">
+    <string>Correct barcodes</string>
+   </property>
+  </action>
+  <action name="actionShop_settings">
+   <property name="text">
+    <string>Shop settings</string>
+   </property>
+  </action>
+  <action name="actionAdd_brutto_buy_prices">
+   <property name="text">
+    <string>Add brutto buy prices</string>
+   </property>
+  </action>
+  <action name="actionMovers">
+   <property name="text">
+    <string>Movers</string>
+   </property>
+  </action>
+  <action name="actionBackup_settings">
+   <property name="text">
+    <string>Backup settings</string>
+   </property>
+  </action>
+  <action name="actionSuppliers">
+   <property name="text">
+    <string>Suppliers</string>
+   </property>
+  </action>
+  <action name="actionPrint_shelf_labels">
+   <property name="text">
+    <string>Print shelf labels</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

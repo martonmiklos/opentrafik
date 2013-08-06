@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogWarehouse</class>
+ <widget class="QDialog" name="DialogWarehouse">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>834</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Warehouse</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="4" column="1">
+    <widget class="QPushButton" name="pushButtonWarehouseBatchItems">
+     <property name="text">
+      <string>Batch items</string>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+B</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="pushButtonAddNew">
+     <property name="text">
+      <string>Add new (Ctrl+N)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icons/icons.qrc">
+       <normaloff>:/images/list-add.svg</normaloff>:/images/list-add.svg</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+N</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="pushButtonExport">
+     <property name="text">
+      <string>PLU export</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="1">
+    <widget class="QPushButton" name="pushButtonDeleteCurrent">
+     <property name="text">
+      <string>Delete (Del)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icons/icons.qrc">
+       <normaloff>:/images/list-remove.svg</normaloff>:/images/list-remove.svg</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Del</string>
+     </property>
+    </widget>
+   </item>
+   <item row="5" column="1">
+    <widget class="QPushButton" name="pushButtonHistory">
+     <property name="text">
+      <string>History</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pushButtonSave">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>Save (Ctrl+S)</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icons/icons.qrc">
+       <normaloff>:/images/document-save.svg</normaloff>:/images/document-save.svg</iconset>
+     </property>
+     <property name="shortcut">
+      <string>Ctrl+S</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Details</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <layout class="QFormLayout" name="formLayout">
+        <property name="fieldGrowthPolicy">
+         <enum>QFormLayout::ExpandingFieldsGrow</enum>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="nameLabel">
+          <property name="text">
+           <string>Name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="nameLineEdit">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="onStockLabel">
+          <property name="text">
+           <string>On stock:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QDoubleSpinBox" name="onStockDoubleSpinBox">
+          <property name="decimals">
+           <number>0</number>
+          </property>
+          <property name="minimum">
+           <double>-999999.000000000000000</double>
+          </property>
+          <property name="maximum">
+           <double>99999.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="priceOutLabel">
+          <property name="text">
+           <string>Pricebrutto  out:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QDoubleSpinBox" name="priceOutDoubleSpinBox">
+          <property name="decimals">
+           <number>0</number>
+          </property>
+          <property name="maximum">
+           <double>99990.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="text">
+           <string>Price netto out:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="1">
+         <widget class="QLabel" name="labelPriceNettoOut">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="barcodeLabel">
+          <property name="text">
+           <string>Barcode:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1">
+         <widget class="BarcodeLineEdit" name="barcodeLineEdit"/>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLabel" name="priceInLabel">
+          <property name="text">
+           <string>Price brutto in:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <widget class="QDoubleSpinBox" name="priceInDoubleSpinBox">
+          <property name="decimals">
+           <number>3</number>
+          </property>
+          <property name="maximum">
+           <double>99990.000000000000000</double>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Price netto in:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="6" column="1">
+         <widget class="QLabel" name="labelPriceNettoIn">
+          <property name="text">
+           <string>0</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="taxTypeLabel">
+          <property name="text">
+           <string>Tax type:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1">
+         <widget class="TaxComboBox" name="taxTypeComboBox"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="descriptionLabel">
+          <property name="text">
+           <string>Description:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="8" column="1">
+         <widget class="QTextEdit" name="descriptionTextEdit"/>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="7" column="1">
+    <widget class="QPushButton" name="pushButtonImport">
+     <property name="text">
+      <string>PLU import</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" rowspan="8">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="lineEditFilter"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="labelFilter">
+       <property name="text">
+        <string>Filter:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="2">
+      <widget class="QPushButton" name="pushButtonAdvancedFilter">
+       <property name="text">
+        <string>Advanced</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="3">
+      <widget class="QTableView" name="tableView">
+       <property name="minimumSize">
+        <size>
+         <width>450</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="sortingEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="8" column="0" colspan="2">
+    <widget class="QLabel" name="labelStatusbar">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+  </layout>
+  <action name="actionSearch">
+   <property name="text">
+    <string>search</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BarcodeLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>barcodelineedit.h</header>
+  </customwidget>
+  <customwidget>
+   <class>TaxComboBox</class>
+   <extends>QComboBox</extends>
+   <header>taxcombobox.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

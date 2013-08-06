@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogSellItem</class>
+ <widget class="QDialog" name="DialogSellItem">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sell item</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">font: 75  26pt &quot;Ubuntu&quot;;</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0" colspan="3">
+    <widget class="QLabel" name="labelMessage">
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="BarcodeLineEdit" name="barcodeLineEdit">
+     <property name="styleSheet">
+      <string notr="true">font: 75  26pt &quot;Ubuntu&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="labelBarcode">
+     <property name="text">
+      <string>Barcode:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QPushButton" name="pushButton">
+     <property name="text">
+      <string>Storno last</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>BarcodeLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>barcodelineedit.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>list-remove.svg</file>
+        <file>list-add.svg</file>
+        <file>document-save.svg</file>
+        <file>help-browser.svg</file>
+        <file>logo.png</file>
+        <file>view-fullscreen.svg</file>
+        <file>system-log-out.svg</file>
+        <file>system-file-manager.svg</file>
+        <file>window-new.svg</file>
+        <file>system-users.svg</file>
+        <file>go-previous.svg</file>
+        <file>go-next.svg</file>
+        <file>icon.png</file>
+        <file>system-search.svg</file>
+        <file>format-indent-more.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogImports</class>
+ <widget class="QDialog" name="DialogImports">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>733</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Imports</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QPushButton" name="pushButtonImport">
+     <property name="text">
+      <string>New import</string>
+     </property>
+     <property name="icon">
+      <iconset resource="icons/icons.qrc">
+       <normaloff>:/images/format-indent-more.svg</normaloff>:/images/format-indent-more.svg</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QTableView" name="tableViewImports"/>
+   </item>
+   <item row="0" column="0">
+    <widget class="QPushButton" name="pushButtonSubstracImports">
+     <property name="text">
+      <string>Substract imports</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="icons/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
