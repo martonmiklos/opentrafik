@@ -7,7 +7,7 @@ OpenTrafik
 For international users: this software is designed mainly for warehouse managment in the Hungarian tobacco shops, so no English documentation provided. Sorry. 
 
 
-Az OpenTrafik egy nyílt forráskódú trafikszoftver, amely képes napi szintű készletnyilvántartásra, és /*ha egyszer az NDN Zrt. publikálja a specifikációt*/ akkor online napi jelentések továbbítására.
+Az OpenTrafik egy nyílt forráskódú trafikszoftver, amely képes napi szintű készletnyilvántartásra, és /* ha egyszer az NDN Zrt. publikálja a specifikációt akkor */ online napi jelentések továbbítására.
 
 A szoftver C++ nyelven íródott a Qt keretrendszer segítségével. 
 
