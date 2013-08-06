@@ -24,3 +24,6 @@ Főbb képességei:
  * Forgalmi jelentések (napi/heti/tetszőleges időtartam, bevétel/kiadás)
  * Termékforgalmi adatok
  * Az adatbázisban van egy 170 darabos terméklista vonalkódokkal, a jelenlegi árakkal
+ * SQLite adatbázis az alapértelmezett, de lehetőség van MySQL illetve PostgreSQL használtatára is. Egyéb adatbázisok is támogathatók ld: https://qt-project.org/doc/qt-5.1/qtsql/sql-driver.html
+ 
+A rendszer szabadon továbbfejleszthető, bővíthető. 
