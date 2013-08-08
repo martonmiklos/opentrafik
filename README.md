@@ -26,4 +26,11 @@ Főbb képességei:
  * Az adatbázisban van egy 170 darabos terméklista vonalkódokkal, a jelenlegi árakkal
  * SQLite adatbázis az alapértelmezett, de lehetőség van MySQL illetve PostgreSQL használtatára is. Egyéb adatbázisok is támogathatók ld: https://qt-project.org/doc/qt-5.1/qtsql/sql-driver.html
  
+Tervezett képességek:
+ * Elcom EURO-150 Flexy pénztárgép támogatása
+ * E-számla formátum támogatása a bevételezéshez
+ 
+Felhasználói kézikönyv elérhető itt:
+https://github.com/martonmiklos/opentrafik/raw/master/opentrafik/doc/user_manual.pdf
+ 
 A rendszer szabadon továbbfejleszthető, bővíthető. 

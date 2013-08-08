@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/translations">
         <file>qt_hu.qm</file>
-        <file>opentrafik_hu.ts</file>
+        <file>opentrafik_hu.qm</file>
     </qresource>
 </RCC>

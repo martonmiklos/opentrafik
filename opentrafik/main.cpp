@@ -16,20 +16,6 @@
 
 int main(int argc, char *argv[])
 {
-    /*QtSingleApplication instance(argc, argv);
-    if (instance.sendMessage("Wake up!"))
-    return 0;
-
-    TextEdit logview;
-    logview.setReadOnly(true);
-    logview.show();
-
-    instance.setActivationWindow(&logview);
-
-    QObject::connect(&instance, SIGNAL(messageReceived(const QString&)),
-             &logview, SLOT(append(const QString&)));
-
-    return instance.exec();*/
     QCoreApplication::setOrganizationName("MM");
     QCoreApplication::setApplicationName("OpenTrafik");
     QCoreApplication::setApplicationVersion("1.0");
